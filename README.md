@@ -52,7 +52,7 @@ use Foo\Math;
 $app            = new Application(['debug' => true]);
 
 $app->register(new InjectorServiceProvider([
-    'Math' => 'math',
+    'Foo\Math' => 'math',
 ]));
 
 $app['math'] = function () {
@@ -66,4 +66,4 @@ $app->get("/", function (Math $math) {
 $app->run();
 ```
 
-And that's all. Our  InjectorServiceProvider allows us to define the class provided by the service provider, and its Silex/Pimple key name in the Dependency Injection Container.
+And that's all. Our  InjectorServiceProvider allows us to define the class provided by the service provider, and its Silex/Pimple key name in the Dependency Injection Contai
