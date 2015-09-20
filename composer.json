@@ -2,7 +2,7 @@
   "name": "gonzalo123/injector",
   "keywords": [
     "silex",
-    "service provider",
+    "service provider"
   ],
   "description": "ServiceProvider",
   "license": "MIT",
