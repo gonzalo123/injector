@@ -66,4 +66,4 @@ $app->get("/", function (Math $math) {
 $app->run();
 ```
 
-And that's all. Our  InjectorServiceProvider allows us to define the class provided by the service provider, and its Silex/Pimple key name in the Dependency Injection Contailer
+And that's all. Our  InjectorServiceProvider allows us to define the class provided by the service provider, and its Silex/Pimple key name in the Dependency Injection Container
