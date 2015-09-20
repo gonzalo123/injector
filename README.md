@@ -1,5 +1,6 @@
 InjectorServiceProvider
 ======
+[![Build Status](https://travis-ci.org/gonzalo123/injector.svg)](https://travis-ci.org/gonzalo123/injector)
 
 Alternative way to define service providers in Silex
 
