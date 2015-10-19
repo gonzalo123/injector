@@ -11,7 +11,7 @@ class InjectorServiceProvider implements ServiceProviderInterface
 {
     private $injectables;
 
-    public function __construct($injectables = [])
+    public function __construct(array $injectables = array())
     {
         $this->injectables = $injectables;
     }
