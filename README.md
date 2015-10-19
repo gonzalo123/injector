@@ -39,8 +39,8 @@ $app->get("/", function () use ($app) {
 $app->run();
 ```
 
-We have one Service available in $app['math'], but, what's the type of the class? We need to inspect Math class to figure out what public functions are available.
-Sometimes I'm a bit lazy to do that, and because of that I've develop this small service provider to allow us to use a different approach to define our service providers.
+We have one Service available in `$app['math']`, but, what's the type of the class? We need to inspect `Math` class to figure out what public functions are available.
+Sometimes I'm a bit lazy to do that, and because of that I've developed this small service provider to allow us to use a different approach to define our service providers.
 
 ```php
 include __DIR__ . "/../vendor/autoload.php";
@@ -66,4 +66,4 @@ $app->get("/", function (Math $math) {
 $app->run();
 ```
 
-And that's all. Our  InjectorServiceProvider allows us to define the class provided by the service provider, and its Silex/Pimple key name in the Dependency Injection Container
+And that's all. Our `InjectorServiceProvider` allows us to define the class provided by the service provider, and its Silex/Pimple key name in the Dependency Injection Container
